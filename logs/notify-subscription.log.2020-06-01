@@ -1,0 +1,386 @@
+2020-06-01 16:07:28,128 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@77e4c80f
+2020-06-01 16:07:28,649 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\AdminController.class]
+2020-06-01 16:07:28,663 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\LogController.class]
+2020-06-01 16:07:28,672 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\StuController.class]
+2020-06-01 16:07:28,681 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\TeachController.class]
+2020-06-01 16:07:28,709 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\AdminServiceImpl.class]
+2020-06-01 16:07:28,727 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\LogServiceImpl.class]
+2020-06-01 16:07:28,733 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\StuServiceImpl.class]
+2020-06-01 16:07:28,740 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\TeachServiceImpl.class]
+2020-06-01 16:07:28,819 - Loaded 21 bean definitions from class path resource [spring-config.xml]
+2020-06-01 16:07:28,962 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-06-01 16:07:29,048 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-06-01 16:07:29,110 - No MyBatis mapper was found in '[com.java1234.dao]' package. Please check your configuration.
+2020-06-01 16:07:29,111 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-06-01 16:07:29,112 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-06-01 16:07:29,114 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-06-01 16:07:29,115 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-06-01 16:07:29,118 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-06-01 16:07:29,153 - Creating shared instance of singleton bean 'adminController'
+2020-06-01 16:07:29,153 - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+2020-06-01 16:07:29,181 - Creating shared instance of singleton bean 'adminService'
+2020-06-01 16:07:29,228 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-06-01 16:07:29,231 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.jianyan.dao.AdminDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2020-06-01 16:10:04,086 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@77e4c80f
+2020-06-01 16:10:04,319 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\AdminController.class]
+2020-06-01 16:10:04,321 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\LogController.class]
+2020-06-01 16:10:04,323 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\StuController.class]
+2020-06-01 16:10:04,325 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\TeachController.class]
+2020-06-01 16:10:04,333 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\AdminServiceImpl.class]
+2020-06-01 16:10:04,333 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\LogServiceImpl.class]
+2020-06-01 16:10:04,334 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\StuServiceImpl.class]
+2020-06-01 16:10:04,335 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\TeachServiceImpl.class]
+2020-06-01 16:10:04,386 - Loaded 21 bean definitions from class path resource [spring-config.xml]
+2020-06-01 16:10:04,427 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-06-01 16:10:04,526 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-06-01 16:10:04,565 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\AdminDao.class]
+2020-06-01 16:10:04,566 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\LogDao.class]
+2020-06-01 16:10:04,566 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\StuDao.class]
+2020-06-01 16:10:04,567 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\TeachDao.class]
+2020-06-01 16:10:04,567 - Creating MapperFactoryBean with name 'adminDao' and 'com.jianyan.dao.AdminDao' mapperInterface
+2020-06-01 16:10:04,570 - Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2020-06-01 16:10:04,570 - Creating MapperFactoryBean with name 'logDao' and 'com.jianyan.dao.LogDao' mapperInterface
+2020-06-01 16:10:04,570 - Enabling autowire by type for MapperFactoryBean with name 'logDao'.
+2020-06-01 16:10:04,570 - Creating MapperFactoryBean with name 'stuDao' and 'com.jianyan.dao.StuDao' mapperInterface
+2020-06-01 16:10:04,570 - Enabling autowire by type for MapperFactoryBean with name 'stuDao'.
+2020-06-01 16:10:04,571 - Creating MapperFactoryBean with name 'teachDao' and 'com.jianyan.dao.TeachDao' mapperInterface
+2020-06-01 16:10:04,571 - Enabling autowire by type for MapperFactoryBean with name 'teachDao'.
+2020-06-01 16:10:04,573 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-06-01 16:10:04,577 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-06-01 16:10:04,580 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-06-01 16:10:04,582 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-06-01 16:10:04,586 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-06-01 16:10:04,617 - Creating shared instance of singleton bean 'adminController'
+2020-06-01 16:10:04,618 - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+2020-06-01 16:10:04,648 - Creating shared instance of singleton bean 'adminService'
+2020-06-01 16:10:04,650 - Creating shared instance of singleton bean 'adminDao'
+2020-06-01 16:10:04,676 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-06-01 16:10:04,679 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2020-06-01 16:10:04,680 - Creating shared instance of singleton bean 'datasource'
+2020-06-01 16:10:04,994 - 16:10:04.993 main > org.aspectj.weaver.World$TypeMap.<init> org.aspectj.weaver.World$TypeMap@2f953efd org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 16:10:04,994 - 16:10:04.994 main < org.aspectj.weaver.World$TypeMap.<init>
+2020-06-01 16:10:04,996 - 16:10:04.996 main > org.aspectj.weaver.CrosscuttingMembersSet.<init> org.aspectj.weaver.CrosscuttingMembersSet@12591ac8 org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 16:10:04,996 - 16:10:04.996 main < org.aspectj.weaver.CrosscuttingMembersSet.<init>
+2020-06-01 16:10:05,000 - 16:10:04.999 main > org.aspectj.weaver.Lint.<init> org.aspectj.weaver.Lint@7dc19a70 org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 16:10:05,000 - 16:10:05.000 main < org.aspectj.weaver.Lint.<init>
+2020-06-01 16:10:05,000 - 16:10:05.000 main > org.aspectj.weaver.World.<init> org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 16:10:05,003 - 16:10:05.002 main > org.aspectj.weaver.Dump.registerNode class org.aspectj.weaver.reflect.ReflectionWorld, org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 16:10:05,003 - 16:10:05.003 main < org.aspectj.weaver.Dump.registerNode 1
+2020-06-01 16:10:05,026 - 16:10:05.026 main < org.aspectj.weaver.World.<init>
+2020-06-01 16:10:05,027 - 16:10:05.027 main > org.aspectj.weaver.World$TypeMap.<init> org.aspectj.weaver.World$TypeMap@24959ca4 org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 16:10:05,027 - 16:10:05.027 main < org.aspectj.weaver.World$TypeMap.<init>
+2020-06-01 16:10:05,027 - 16:10:05.027 main > org.aspectj.weaver.CrosscuttingMembersSet.<init> org.aspectj.weaver.CrosscuttingMembersSet@5c86dbc5 org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 16:10:05,027 - 16:10:05.027 main < org.aspectj.weaver.CrosscuttingMembersSet.<init>
+2020-06-01 16:10:05,027 - 16:10:05.027 main > org.aspectj.weaver.Lint.<init> org.aspectj.weaver.Lint@461ad730 org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 16:10:05,027 - 16:10:05.027 main < org.aspectj.weaver.Lint.<init>
+2020-06-01 16:10:05,027 - 16:10:05.027 main > org.aspectj.weaver.World.<init> org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 16:10:05,027 - 16:10:05.027 main > org.aspectj.weaver.Dump.registerNode class org.aspectj.weaver.reflect.ReflectionWorld, org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 16:10:05,027 - 16:10:05.027 main < org.aspectj.weaver.Dump.registerNode 2
+2020-06-01 16:10:05,027 - 16:10:05.027 main < org.aspectj.weaver.World.<init>
+2020-06-01 16:10:05,463 - Registered plugin: 'com.github.pagehelper.PageInterceptor@2f62ea70'
+2020-06-01 16:10:05,483 - Class not found: org.jboss.vfs.VFS
+2020-06-01 16:10:05,483 - JBoss 6 VFS API is not available in this environment.
+2020-06-01 16:10:05,485 - Class not found: org.jboss.vfs.VirtualFile
+2020-06-01 16:10:05,485 - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2020-06-01 16:10:05,486 - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2020-06-01 16:10:05,486 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity
+2020-06-01 16:10:05,486 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity
+2020-06-01 16:10:05,515 - Reader entry: Admin.class
+2020-06-01 16:10:05,515 - Reader entry: Log.class
+2020-06-01 16:10:05,516 - Reader entry: Stu.class
+2020-06-01 16:10:05,516 - Reader entry: Teach.class
+2020-06-01 16:10:05,517 - Listing file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity
+2020-06-01 16:10:05,517 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Admin.class
+2020-06-01 16:10:05,517 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Admin.class
+2020-06-01 16:10:05,518 - Reader entry: ����   4 6
+2020-06-01 16:10:05,519 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Log.class
+2020-06-01 16:10:05,519 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Log.class
+2020-06-01 16:10:05,519 - Reader entry: ����   4 4
+2020-06-01 16:10:05,520 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Stu.class
+2020-06-01 16:10:05,520 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Stu.class
+2020-06-01 16:10:05,521 - Reader entry: ����   4 �
+2020-06-01 16:10:05,521 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Teach.class
+2020-06-01 16:10:05,521 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Teach.class
+2020-06-01 16:10:05,522 - Reader entry: ����   4 E
+2020-06-01 16:10:05,522 - Checking to see if class com.jianyan.entity.Admin matches criteria [is assignable to Object]
+2020-06-01 16:10:05,522 - Checking to see if class com.jianyan.entity.Log matches criteria [is assignable to Object]
+2020-06-01 16:10:05,523 - Checking to see if class com.jianyan.entity.Stu matches criteria [is assignable to Object]
+2020-06-01 16:10:05,524 - Checking to see if class com.jianyan.entity.Teach matches criteria [is assignable to Object]
+2020-06-01 16:10:05,683 - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2020-06-01 16:10:05,686 - Property 'mapperLocations' was not specified or no matching resources found
+2020-06-01 16:10:05,723 - Creating shared instance of singleton bean 'txadvice'
+2020-06-01 16:10:05,726 - Creating shared instance of singleton bean 'transactionManager'
+2020-06-01 16:10:05,755 - Adding transactional method [insert*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2020-06-01 16:10:05,755 - Adding transactional method [update*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2020-06-01 16:10:05,755 - Adding transactional method [delete*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2020-06-01 16:10:05,755 - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+2020-06-01 16:10:05,782 - Creating shared instance of singleton bean 'logController'
+2020-06-01 16:10:05,783 - Creating shared instance of singleton bean 'logService'
+2020-06-01 16:10:05,785 - Creating shared instance of singleton bean 'logDao'
+2020-06-01 16:10:05,791 - Creating shared instance of singleton bean 'stuController'
+2020-06-01 16:10:05,792 - Creating shared instance of singleton bean 'stuService'
+2020-06-01 16:10:05,793 - Creating shared instance of singleton bean 'stuDao'
+2020-06-01 16:10:05,797 - Creating shared instance of singleton bean 'teachController'
+2020-06-01 16:10:05,797 - Creating shared instance of singleton bean 'teachService'
+2020-06-01 16:10:05,798 - Creating shared instance of singleton bean 'teachDao'
+2020-06-01 16:10:05,862 - Creating new transaction with name [com.jianyan.service.impl.StuServiceImpl.queryById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2020-06-01 16:10:06,109 - {dataSource-1} inited
+2020-06-01 16:10:06,363 - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] for JDBC transaction
+2020-06-01 16:10:06,396 - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] read-only
+2020-06-01 16:10:06,396 - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] to manual commit
+2020-06-01 16:10:06,400 - Creating a new SqlSession
+2020-06-01 16:10:06,431 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 16:10:06,447 - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] will be managed by Spring
+2020-06-01 16:10:06,450 - ==>  Preparing: select sid, name, sex, age, origin, national, ticket, headteacher, idnumber, major, phonenum, qqnum, address, emergencyContact, emergencyContacnumber, school, area, tid, createDate, modifyDate, status, remark from recruit.stu where sid = ? 
+2020-06-01 16:10:06,471 - ==> Parameters: 1(Integer)
+2020-06-01 16:10:06,504 - <==      Total: 0
+2020-06-01 16:10:06,505 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 16:10:06,505 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 16:10:06,505 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 16:10:06,505 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 16:10:06,505 - Initiating transaction commit
+2020-06-01 16:10:06,505 - Committing JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5]
+2020-06-01 16:10:06,506 - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5]
+2020-06-01 16:10:06,506 - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] after transaction
+2020-06-01 21:02:47,998 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@77e4c80f
+2020-06-01 21:02:48,787 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\AdminController.class]
+2020-06-01 21:02:48,797 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\LogController.class]
+2020-06-01 21:02:48,814 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\StuController.class]
+2020-06-01 21:02:48,839 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\TeachController.class]
+2020-06-01 21:02:48,859 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\AdminServiceImpl.class]
+2020-06-01 21:02:48,869 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\LogServiceImpl.class]
+2020-06-01 21:02:48,891 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\StuServiceImpl.class]
+2020-06-01 21:02:48,907 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\TeachServiceImpl.class]
+2020-06-01 21:02:49,122 - Loaded 21 bean definitions from class path resource [spring-config.xml]
+2020-06-01 21:02:49,312 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-06-01 21:02:49,468 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-06-01 21:02:49,549 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\AdminDao.class]
+2020-06-01 21:02:49,549 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\LogDao.class]
+2020-06-01 21:02:49,550 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\StuDao.class]
+2020-06-01 21:02:49,550 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\TeachDao.class]
+2020-06-01 21:02:49,550 - Creating MapperFactoryBean with name 'adminDao' and 'com.jianyan.dao.AdminDao' mapperInterface
+2020-06-01 21:02:49,552 - Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2020-06-01 21:02:49,552 - Creating MapperFactoryBean with name 'logDao' and 'com.jianyan.dao.LogDao' mapperInterface
+2020-06-01 21:02:49,552 - Enabling autowire by type for MapperFactoryBean with name 'logDao'.
+2020-06-01 21:02:49,552 - Creating MapperFactoryBean with name 'stuDao' and 'com.jianyan.dao.StuDao' mapperInterface
+2020-06-01 21:02:49,552 - Enabling autowire by type for MapperFactoryBean with name 'stuDao'.
+2020-06-01 21:02:49,552 - Creating MapperFactoryBean with name 'teachDao' and 'com.jianyan.dao.TeachDao' mapperInterface
+2020-06-01 21:02:49,552 - Enabling autowire by type for MapperFactoryBean with name 'teachDao'.
+2020-06-01 21:02:49,555 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-06-01 21:02:49,557 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-06-01 21:02:49,558 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-06-01 21:02:49,559 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-06-01 21:02:49,563 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-06-01 21:02:49,618 - Creating shared instance of singleton bean 'adminController'
+2020-06-01 21:02:49,619 - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+2020-06-01 21:02:49,649 - Creating shared instance of singleton bean 'adminService'
+2020-06-01 21:02:49,651 - Creating shared instance of singleton bean 'adminDao'
+2020-06-01 21:02:49,701 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-06-01 21:02:49,704 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2020-06-01 21:02:49,705 - Creating shared instance of singleton bean 'datasource'
+2020-06-01 21:02:49,991 - 21:02:49.990 main > org.aspectj.weaver.World$TypeMap.<init> org.aspectj.weaver.World$TypeMap@2f953efd org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 21:02:49,991 - 21:02:49.991 main < org.aspectj.weaver.World$TypeMap.<init>
+2020-06-01 21:02:49,992 - 21:02:49.992 main > org.aspectj.weaver.CrosscuttingMembersSet.<init> org.aspectj.weaver.CrosscuttingMembersSet@12591ac8 org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 21:02:49,992 - 21:02:49.992 main < org.aspectj.weaver.CrosscuttingMembersSet.<init>
+2020-06-01 21:02:49,994 - 21:02:49.994 main > org.aspectj.weaver.Lint.<init> org.aspectj.weaver.Lint@7dc19a70 org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 21:02:49,994 - 21:02:49.994 main < org.aspectj.weaver.Lint.<init>
+2020-06-01 21:02:49,994 - 21:02:49.994 main > org.aspectj.weaver.World.<init> org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 21:02:49,996 - 21:02:49.996 main > org.aspectj.weaver.Dump.registerNode class org.aspectj.weaver.reflect.ReflectionWorld, org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 21:02:49,996 - 21:02:49.996 main < org.aspectj.weaver.Dump.registerNode 1
+2020-06-01 21:02:50,014 - 21:02:50.014 main < org.aspectj.weaver.World.<init>
+2020-06-01 21:02:50,015 - 21:02:50.015 main > org.aspectj.weaver.World$TypeMap.<init> org.aspectj.weaver.World$TypeMap@24959ca4 org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 21:02:50,015 - 21:02:50.015 main < org.aspectj.weaver.World$TypeMap.<init>
+2020-06-01 21:02:50,015 - 21:02:50.015 main > org.aspectj.weaver.CrosscuttingMembersSet.<init> org.aspectj.weaver.CrosscuttingMembersSet@5c86dbc5 org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 21:02:50,015 - 21:02:50.015 main < org.aspectj.weaver.CrosscuttingMembersSet.<init>
+2020-06-01 21:02:50,015 - 21:02:50.015 main > org.aspectj.weaver.Lint.<init> org.aspectj.weaver.Lint@461ad730 org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 21:02:50,015 - 21:02:50.015 main < org.aspectj.weaver.Lint.<init>
+2020-06-01 21:02:50,015 - 21:02:50.015 main > org.aspectj.weaver.World.<init> org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 21:02:50,015 - 21:02:50.015 main > org.aspectj.weaver.Dump.registerNode class org.aspectj.weaver.reflect.ReflectionWorld, org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 21:02:50,015 - 21:02:50.015 main < org.aspectj.weaver.Dump.registerNode 2
+2020-06-01 21:02:50,015 - 21:02:50.015 main < org.aspectj.weaver.World.<init>
+2020-06-01 21:02:50,367 - Registered plugin: 'com.github.pagehelper.PageInterceptor@2f62ea70'
+2020-06-01 21:02:50,383 - Class not found: org.jboss.vfs.VFS
+2020-06-01 21:02:50,383 - JBoss 6 VFS API is not available in this environment.
+2020-06-01 21:02:50,384 - Class not found: org.jboss.vfs.VirtualFile
+2020-06-01 21:02:50,385 - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2020-06-01 21:02:50,385 - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2020-06-01 21:02:50,385 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity
+2020-06-01 21:02:50,386 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity
+2020-06-01 21:02:50,447 - Reader entry: Admin.class
+2020-06-01 21:02:50,448 - Reader entry: Log.class
+2020-06-01 21:02:50,448 - Reader entry: Stu.class
+2020-06-01 21:02:50,448 - Reader entry: Teach.class
+2020-06-01 21:02:50,449 - Listing file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity
+2020-06-01 21:02:50,449 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Admin.class
+2020-06-01 21:02:50,449 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Admin.class
+2020-06-01 21:02:50,449 - Reader entry: ����   4 6
+2020-06-01 21:02:50,450 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Log.class
+2020-06-01 21:02:50,450 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Log.class
+2020-06-01 21:02:50,451 - Reader entry: ����   4 v
+2020-06-01 21:02:50,451 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Stu.class
+2020-06-01 21:02:50,451 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Stu.class
+2020-06-01 21:02:50,452 - Reader entry: ����   4N
+2020-06-01 21:02:50,452 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Teach.class
+2020-06-01 21:02:50,452 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Teach.class
+2020-06-01 21:02:50,453 - Reader entry: ����   4 �
+2020-06-01 21:02:50,454 - Checking to see if class com.jianyan.entity.Admin matches criteria [is assignable to Object]
+2020-06-01 21:02:50,454 - Checking to see if class com.jianyan.entity.Log matches criteria [is assignable to Object]
+2020-06-01 21:02:50,455 - Checking to see if class com.jianyan.entity.Stu matches criteria [is assignable to Object]
+2020-06-01 21:02:50,455 - Checking to see if class com.jianyan.entity.Teach matches criteria [is assignable to Object]
+2020-06-01 21:02:50,608 - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2020-06-01 21:02:50,611 - Property 'mapperLocations' was not specified or no matching resources found
+2020-06-01 21:02:50,645 - Creating shared instance of singleton bean 'txadvice'
+2020-06-01 21:02:50,648 - Creating shared instance of singleton bean 'transactionManager'
+2020-06-01 21:02:50,679 - Adding transactional method [insert*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2020-06-01 21:02:50,680 - Adding transactional method [update*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2020-06-01 21:02:50,680 - Adding transactional method [delete*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2020-06-01 21:02:50,680 - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+2020-06-01 21:02:50,705 - Creating shared instance of singleton bean 'logController'
+2020-06-01 21:02:50,706 - Creating shared instance of singleton bean 'logService'
+2020-06-01 21:02:50,706 - Creating shared instance of singleton bean 'logDao'
+2020-06-01 21:02:50,712 - Creating shared instance of singleton bean 'stuController'
+2020-06-01 21:02:50,713 - Creating shared instance of singleton bean 'stuService'
+2020-06-01 21:02:50,713 - Creating shared instance of singleton bean 'stuDao'
+2020-06-01 21:02:50,718 - Creating shared instance of singleton bean 'teachController'
+2020-06-01 21:02:50,719 - Creating shared instance of singleton bean 'teachService'
+2020-06-01 21:02:50,720 - Creating shared instance of singleton bean 'teachDao'
+2020-06-01 21:02:50,793 - Creating new transaction with name [com.jianyan.service.impl.StuServiceImpl.queryById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2020-06-01 21:02:51,057 - {dataSource-1} inited
+2020-06-01 21:02:51,229 - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] for JDBC transaction
+2020-06-01 21:02:51,264 - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] read-only
+2020-06-01 21:02:51,265 - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] to manual commit
+2020-06-01 21:02:51,269 - Creating a new SqlSession
+2020-06-01 21:02:51,291 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 21:02:51,308 - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] will be managed by Spring
+2020-06-01 21:02:51,311 - ==>  Preparing: SELECT s.* ,t.`name` AS tname, t.`sex` AS tsex FROM stu s ,teach t WHERE s.tid=t.tid and sid = ? 
+2020-06-01 21:02:51,331 - ==> Parameters: 1(Integer)
+2020-06-01 21:02:51,377 - <==      Total: 0
+2020-06-01 21:02:51,378 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 21:02:51,378 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 21:02:51,378 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 21:02:51,378 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 21:02:51,378 - Initiating transaction commit
+2020-06-01 21:02:51,378 - Committing JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5]
+2020-06-01 21:02:51,379 - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5]
+2020-06-01 21:02:51,379 - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] after transaction
+2020-06-01 21:12:45,730 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@77e4c80f
+2020-06-01 21:12:45,958 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\AdminController.class]
+2020-06-01 21:12:45,959 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\LogController.class]
+2020-06-01 21:12:45,959 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\StuController.class]
+2020-06-01 21:12:45,960 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\controller\TeachController.class]
+2020-06-01 21:12:45,967 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\AdminServiceImpl.class]
+2020-06-01 21:12:45,967 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\LogServiceImpl.class]
+2020-06-01 21:12:45,968 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\StuServiceImpl.class]
+2020-06-01 21:12:45,968 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\service\impl\TeachServiceImpl.class]
+2020-06-01 21:12:46,008 - Loaded 21 bean definitions from class path resource [spring-config.xml]
+2020-06-01 21:12:46,049 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2020-06-01 21:12:46,136 - Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2020-06-01 21:12:46,168 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\AdminDao.class]
+2020-06-01 21:12:46,168 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\LogDao.class]
+2020-06-01 21:12:46,168 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\StuDao.class]
+2020-06-01 21:12:46,168 - Identified candidate component class: file [D:\Program Files (x86)\idea\myproject\recruit\target\classes\com\jianyan\dao\TeachDao.class]
+2020-06-01 21:12:46,169 - Creating MapperFactoryBean with name 'adminDao' and 'com.jianyan.dao.AdminDao' mapperInterface
+2020-06-01 21:12:46,170 - Enabling autowire by type for MapperFactoryBean with name 'adminDao'.
+2020-06-01 21:12:46,170 - Creating MapperFactoryBean with name 'logDao' and 'com.jianyan.dao.LogDao' mapperInterface
+2020-06-01 21:12:46,170 - Enabling autowire by type for MapperFactoryBean with name 'logDao'.
+2020-06-01 21:12:46,170 - Creating MapperFactoryBean with name 'stuDao' and 'com.jianyan.dao.StuDao' mapperInterface
+2020-06-01 21:12:46,170 - Enabling autowire by type for MapperFactoryBean with name 'stuDao'.
+2020-06-01 21:12:46,170 - Creating MapperFactoryBean with name 'teachDao' and 'com.jianyan.dao.TeachDao' mapperInterface
+2020-06-01 21:12:46,170 - Enabling autowire by type for MapperFactoryBean with name 'teachDao'.
+2020-06-01 21:12:46,173 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2020-06-01 21:12:46,175 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2020-06-01 21:12:46,178 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2020-06-01 21:12:46,179 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2020-06-01 21:12:46,184 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2020-06-01 21:12:46,220 - Creating shared instance of singleton bean 'adminController'
+2020-06-01 21:12:46,221 - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+2020-06-01 21:12:46,257 - Creating shared instance of singleton bean 'adminService'
+2020-06-01 21:12:46,259 - Creating shared instance of singleton bean 'adminDao'
+2020-06-01 21:12:46,281 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-06-01 21:12:46,286 - Creating shared instance of singleton bean 'sqlSessionFactory'
+2020-06-01 21:12:46,287 - Creating shared instance of singleton bean 'datasource'
+2020-06-01 21:12:46,396 - 21:12:46.395 main > org.aspectj.weaver.World$TypeMap.<init> org.aspectj.weaver.World$TypeMap@2f953efd org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 21:12:46,396 - 21:12:46.396 main < org.aspectj.weaver.World$TypeMap.<init>
+2020-06-01 21:12:46,398 - 21:12:46.398 main > org.aspectj.weaver.CrosscuttingMembersSet.<init> org.aspectj.weaver.CrosscuttingMembersSet@12591ac8 org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 21:12:46,398 - 21:12:46.398 main < org.aspectj.weaver.CrosscuttingMembersSet.<init>
+2020-06-01 21:12:46,400 - 21:12:46.400 main > org.aspectj.weaver.Lint.<init> org.aspectj.weaver.Lint@7dc19a70 org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 21:12:46,400 - 21:12:46.400 main < org.aspectj.weaver.Lint.<init>
+2020-06-01 21:12:46,400 - 21:12:46.400 main > org.aspectj.weaver.World.<init> org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 21:12:46,403 - 21:12:46.403 main > org.aspectj.weaver.Dump.registerNode class org.aspectj.weaver.reflect.ReflectionWorld, org.aspectj.weaver.reflect.ReflectionWorld@f68f0dc
+2020-06-01 21:12:46,403 - 21:12:46.403 main < org.aspectj.weaver.Dump.registerNode 1
+2020-06-01 21:12:46,430 - 21:12:46.430 main < org.aspectj.weaver.World.<init>
+2020-06-01 21:12:46,431 - 21:12:46.431 main > org.aspectj.weaver.World$TypeMap.<init> org.aspectj.weaver.World$TypeMap@24959ca4 org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 21:12:46,431 - 21:12:46.431 main < org.aspectj.weaver.World$TypeMap.<init>
+2020-06-01 21:12:46,431 - 21:12:46.431 main > org.aspectj.weaver.CrosscuttingMembersSet.<init> org.aspectj.weaver.CrosscuttingMembersSet@5c86dbc5 org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 21:12:46,431 - 21:12:46.431 main < org.aspectj.weaver.CrosscuttingMembersSet.<init>
+2020-06-01 21:12:46,432 - 21:12:46.432 main > org.aspectj.weaver.Lint.<init> org.aspectj.weaver.Lint@461ad730 org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 21:12:46,432 - 21:12:46.432 main < org.aspectj.weaver.Lint.<init>
+2020-06-01 21:12:46,432 - 21:12:46.432 main > org.aspectj.weaver.World.<init> org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 21:12:46,432 - 21:12:46.432 main > org.aspectj.weaver.Dump.registerNode class org.aspectj.weaver.reflect.ReflectionWorld, org.aspectj.weaver.reflect.ReflectionWorld@10289886
+2020-06-01 21:12:46,432 - 21:12:46.432 main < org.aspectj.weaver.Dump.registerNode 2
+2020-06-01 21:12:46,432 - 21:12:46.432 main < org.aspectj.weaver.World.<init>
+2020-06-01 21:12:46,866 - Registered plugin: 'com.github.pagehelper.PageInterceptor@2f62ea70'
+2020-06-01 21:12:46,893 - Class not found: org.jboss.vfs.VFS
+2020-06-01 21:12:46,894 - JBoss 6 VFS API is not available in this environment.
+2020-06-01 21:12:46,895 - Class not found: org.jboss.vfs.VirtualFile
+2020-06-01 21:12:46,895 - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2020-06-01 21:12:46,896 - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2020-06-01 21:12:46,897 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity
+2020-06-01 21:12:46,897 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity
+2020-06-01 21:12:46,935 - Reader entry: Admin.class
+2020-06-01 21:12:46,936 - Reader entry: Log.class
+2020-06-01 21:12:46,936 - Reader entry: Stu.class
+2020-06-01 21:12:46,936 - Reader entry: Teach.class
+2020-06-01 21:12:46,937 - Listing file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity
+2020-06-01 21:12:46,937 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Admin.class
+2020-06-01 21:12:46,937 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Admin.class
+2020-06-01 21:12:46,938 - Reader entry: ����   4 6
+2020-06-01 21:12:46,939 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Log.class
+2020-06-01 21:12:46,939 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Log.class
+2020-06-01 21:12:46,940 - Reader entry: ����   4 v
+2020-06-01 21:12:46,941 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Stu.class
+2020-06-01 21:12:46,941 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Stu.class
+2020-06-01 21:12:46,943 - Reader entry: ����   4N
+2020-06-01 21:12:46,943 - Find JAR URL: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Teach.class
+2020-06-01 21:12:46,943 - Not a JAR: file:/D:/Program%20Files%20(x86)/idea/myproject/recruit/target/classes/com/jianyan/entity/Teach.class
+2020-06-01 21:12:46,944 - Reader entry: ����   4 �
+2020-06-01 21:12:46,945 - Checking to see if class com.jianyan.entity.Admin matches criteria [is assignable to Object]
+2020-06-01 21:12:46,945 - Checking to see if class com.jianyan.entity.Log matches criteria [is assignable to Object]
+2020-06-01 21:12:46,946 - Checking to see if class com.jianyan.entity.Stu matches criteria [is assignable to Object]
+2020-06-01 21:12:46,947 - Checking to see if class com.jianyan.entity.Teach matches criteria [is assignable to Object]
+2020-06-01 21:12:47,104 - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2020-06-01 21:12:47,105 - Property 'mapperLocations' was not specified or no matching resources found
+2020-06-01 21:12:47,132 - Creating shared instance of singleton bean 'txadvice'
+2020-06-01 21:12:47,136 - Creating shared instance of singleton bean 'transactionManager'
+2020-06-01 21:12:47,174 - Adding transactional method [insert*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2020-06-01 21:12:47,174 - Adding transactional method [update*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2020-06-01 21:12:47,174 - Adding transactional method [delete*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2020-06-01 21:12:47,174 - Adding transactional method [*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+2020-06-01 21:12:47,186 - Creating shared instance of singleton bean 'logController'
+2020-06-01 21:12:47,187 - Creating shared instance of singleton bean 'logService'
+2020-06-01 21:12:47,187 - Creating shared instance of singleton bean 'logDao'
+2020-06-01 21:12:47,193 - Creating shared instance of singleton bean 'stuController'
+2020-06-01 21:12:47,194 - Creating shared instance of singleton bean 'stuService'
+2020-06-01 21:12:47,194 - Creating shared instance of singleton bean 'stuDao'
+2020-06-01 21:12:47,199 - Creating shared instance of singleton bean 'teachController'
+2020-06-01 21:12:47,199 - Creating shared instance of singleton bean 'teachService'
+2020-06-01 21:12:47,200 - Creating shared instance of singleton bean 'teachDao'
+2020-06-01 21:12:47,239 - Creating new transaction with name [com.jianyan.service.impl.StuServiceImpl.queryById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2020-06-01 21:12:47,359 - {dataSource-1} inited
+2020-06-01 21:12:47,514 - Acquired Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] for JDBC transaction
+2020-06-01 21:12:47,517 - Setting JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] read-only
+2020-06-01 21:12:47,517 - Switching JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] to manual commit
+2020-06-01 21:12:47,522 - Creating a new SqlSession
+2020-06-01 21:12:47,536 - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 21:12:47,543 - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] will be managed by Spring
+2020-06-01 21:12:47,549 - ==>  Preparing: SELECT s.* ,t.`name` AS tname, t.`sex` AS tsex FROM stu s ,teach t WHERE s.tid=t.tid and sid = ? 
+2020-06-01 21:12:47,575 - ==> Parameters: 1(Integer)
+2020-06-01 21:12:47,596 - <==      Total: 1
+2020-06-01 21:12:47,596 - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 21:12:47,596 - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 21:12:47,596 - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 21:12:47,597 - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dd91bca]
+2020-06-01 21:12:47,597 - Initiating transaction commit
+2020-06-01 21:12:47,597 - Committing JDBC transaction on Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5]
+2020-06-01 21:12:47,598 - Resetting read-only flag of JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5]
+2020-06-01 21:12:47,598 - Releasing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@31aa3ca5] after transaction

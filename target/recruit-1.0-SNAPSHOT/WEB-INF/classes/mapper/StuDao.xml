@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jianyan.dao.StuDao">
+
+    <resultMap type="com.jianyan.entity.Stu" id="StuMap">
+        <result property="sid" column="sid" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="sex" column="sex" jdbcType="VARCHAR"/>
+        <result property="age" column="age" jdbcType="INTEGER"/>
+        <result property="origin" column="origin" jdbcType="VARCHAR"/>
+        <result property="national" column="national" jdbcType="VARCHAR"/>
+        <result property="ticket" column="ticket" jdbcType="VARCHAR"/>
+        <result property="headteacher" column="headteacher" jdbcType="VARCHAR"/>
+        <result property="idnumber" column="idnumber" jdbcType="VARCHAR"/>
+        <result property="major" column="major" jdbcType="VARCHAR"/>
+        <result property="phonenum" column="phonenum" jdbcType="VARCHAR"/>
+        <result property="qqnum" column="qqnum" jdbcType="VARCHAR"/>
+        <result property="address" column="address" jdbcType="VARCHAR"/>
+        <result property="emergencycontact" column="emergencyContact" jdbcType="VARCHAR"/>
+        <result property="emergencycontacnumber" column="emergencyContacnumber" jdbcType="VARCHAR"/>
+        <result property="school" column="school" jdbcType="VARCHAR"/>
+        <result property="area" column="area" jdbcType="VARCHAR"/>
+
+        <result property="createdate" column="createDate" jdbcType="TIMESTAMP"/>
+        <result property="modifydate" column="modifyDate" jdbcType="TIMESTAMP"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="remark" column="remark" jdbcType="VARCHAR"/>
+        <association property="teach" javaType="com.jianyan.entity.Teach">
+            <id column="tid" property="tid"/>
+            <result column="tname" property="name"/>
+            <result column="tsex" property="sex"/>
+
+        </association>
+        
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="StuMap">
+
+SELECT
+        s.*   ,t.`name` AS tname, t.`sex` AS tsex  FROM stu s ,teach t WHERE  s.tid=t.tid and sid = #{sid}
+    </select>
+    <!--图标查询-->
+    <select id="queryView" resultType="com.jianyan.entity.View">
+        SELECT area as name,COUNT(area)as size FROM stu GROUP BY area;
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="StuMap">
+
+        SELECT
+        s.*   ,t.`name` AS tname, t.`sex` AS tsex  FROM stu s ,teach t WHERE  s.tid=t.tid
+
+            <if test="sid != null">
+                and s.sid = #{sid}
+            </if>
+            <if test="name != null and name != ''">
+                and s.name = #{name}
+            </if>
+            <if test="sex != null and sex != ''">
+                and s.sex = #{sex}
+            </if>
+            <if test="age != null">
+                and s.age = #{age}
+            </if>
+            <if test="origin != null and origin != ''">
+                and s.origin = #{origin}
+            </if>
+            <if test="national != null and national != ''">
+                and s.national = #{national}
+            </if>
+            <if test="ticket != null and ticket != ''">
+                and s.ticket = #{ticket}
+            </if>
+            <if test="headteacher != null and headteacher != ''">
+                and s.headteacher = #{headteacher}
+            </if>
+            <if test="idnumber != null and idnumber != ''">
+                and s.idnumber = #{idnumber}
+            </if>
+            <if test="major != null and major != ''">
+                and s.major = #{major}
+            </if>
+            <if test="phonenum != null and phonenum != ''">
+                and s.phonenum = #{phonenum}
+            </if>
+            <if test="qqnum != null and qqnum != ''">
+                and s.qqnum = #{qqnum}
+            </if>
+            <if test="address != null and address != ''">
+                and s.address = #{address}
+            </if>
+            <if test="emergencycontact != null and emergencycontact != ''">
+                and s.emergencyContact = #{emergencycontact}
+            </if>
+            <if test="emergencycontacnumber != null and emergencycontacnumber != ''">
+                and s.emergencyContacnumber = #{emergencycontacnumber}
+            </if>
+            <if test="school != null and school != ''">
+                and s.school = #{school}
+            </if>
+            <if test="area != null and area != ''">
+                and s.area = #{area}
+            </if>
+            <if test="teach!= null and teach.name  != null ">
+                and t.name = #{teach.name}
+
+            </if>
+            <if test="createdate != null">
+                and s.createDate = #{createdate}
+            </if>
+            <if test="modifydate != null">
+                and s.modifyDate = #{modifydate}
+            </if>
+            <if test="status != null">
+                and s.status = #{status}
+            </if>
+            <if test="remark != null and remark != ''">
+                and s.remark = #{remark}
+            </if>
+
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="sid" useGeneratedKeys="true">
+        insert into recruit.stu(name, sex, age, origin, national, ticket, headteacher, major, phonenum, qqnum, address, emergencyContact, emergencyContacnumber, school, area, tid, createDate, modifyDate, status, remark,idnumber)
+        values (#{name}, #{sex}, #{age}, #{origin}, #{national}, #{ticket}, #{headteacher}, #{major}, #{phonenum}, #{qqnum}, #{address}, #{emergencycontact}, #{emergencycontacnumber}, #{school}, #{area}, #{teach.tid}, #{createdate}, now(), #{status}, #{remark},#{idnumber})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update recruit.stu
+        <set>
+            modifyDate = now(),
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="sex != null and sex != ''">
+                sex = #{sex},
+            </if>
+            <if test="age != null">
+                age = #{age},
+            </if>
+            <if test="origin != null and origin != ''">
+                origin = #{origin},
+            </if>
+            <if test="national != null and national != ''">
+                national = #{national},
+            </if>
+            <if test="ticket != null and ticket != ''">
+                ticket = #{ticket},
+            </if>
+            <if test="headteacher != null and headteacher != ''">
+                headteacher = #{headteacher},
+            </if>
+            <if test="major != null and major != ''">
+                major = #{major},
+            </if>
+            <if test="phonenum != null and phonenum != ''">
+                phonenum = #{phonenum},
+            </if>
+            <if test="qqnum != null and qqnum != ''">
+                qqnum = #{qqnum},
+            </if>
+            <if test="address != null and address != ''">
+                address = #{address},
+            </if>
+            <if test="emergencycontact != null and emergencycontact != ''">
+                emergencyContact = #{emergencycontact},
+            </if>
+            <if test="emergencycontacnumber != null and emergencycontacnumber != ''">
+                emergencyContacnumber = #{emergencycontacnumber},
+            </if>
+            <if test="school != null and school != ''">
+                school = #{school},
+            </if>
+            <if test="area != null and area != ''">
+                area = #{area},
+            </if>
+            <if test="teach.tid != null">
+                tid = #{teach.tid},
+            </if>
+            <if test="createdate != null">
+                createDate = #{createdate},
+            </if>
+            <!--<if test="modifydate != null">
+                modifyDate = #{modifydate},
+            </if>-->
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="remark != null and remark != ''">
+                remark = #{remark},
+            </if>
+        </set>
+        where sid = #{sid}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from recruit.stu where sid = #{sid}
+    </delete>
+
+</mapper>

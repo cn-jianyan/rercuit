@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jianyan.dao.LogDao">
+
+    <resultMap type="com.jianyan.entity.Log" id="LogMap">
+        <result property="lid" column="lid" jdbcType="INTEGER"/>
+        <result property="operatingrecord" column="operatingrecord" jdbcType="VARCHAR"/>
+        <result property="operatingdate" column="operatingdate" jdbcType="TIMESTAMP"/>
+        <association property="admin" javaType="com.jianyan.entity.Admin">
+            <id column="aid" property="aid"></id>
+            <result column="aname" property="name"/>
+            <result column="adept" property="dept"/>
+        </association>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="LogMap">
+          SELECT
+         l.*,a.`name`AS aname,a.`dept`AS adept
+        FROM  mylog l , admin a WHERE l.aid = a.aid and lid = #{lid}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="LogMap">
+        select
+          lid, operatingrecord, aid, operatingdate
+        from mylog
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="LogMap">
+        select l.*,a.name as aname,a.dept as adept from mylog l,admin a where l.aid=a.aid
+        <if test="lid != null">
+            and l.lid = #{lid}
+        </if>
+        <if test="operatingrecord != null and operatingrecord != ''">
+            and l.operatingrecord = #{operatingrecord}
+        </if>
+        <if test="admin!= null and admin.name!=null">
+            and a.name = #{admin.name}
+        </if>
+        <if test="operatingdate != null">
+            and l.operatingdate = #{operatingdate}
+        </if>
+
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="lid" useGeneratedKeys="true">
+        insert into mylog (operatingrecord, aid, operatingdate)
+        values (#{operatingrecord}, #{admin.aid}, now())
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update mylog
+        <set>
+            <if test="operatingrecord != null and operatingrecord != ''">
+                operatingrecord = #{operatingrecord},
+            </if>
+            <if test="admin.aid != null">
+                aid = #{admin.aid},
+            </if>
+            <if test="operatingdate != null">
+                operatingdate = #{operatingdate},
+            </if>
+        </set>
+        where lid = #{lid}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from  mylog where lid = #{lid}
+    </delete>
+
+</mapper>
